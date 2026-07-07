@@ -34,9 +34,8 @@ The vulnerable interface is:
 POST /api/v1/workspace/:slug/chat
 ```
 
-When a workspace uses an OpenAI-compatible provider with native tool calling enabled, the agent chat path parses model-supplied `tool_calls[].function.arguments`. If the arguments cannot be parsed as JSON, AnythingLLM appends an error message containing the raw arguments to the message history and recursively calls the provider again.
-
-There is no effective retry limit, recursion depth limit, raw argument size limit, or accumulated message size limit on this path. A malicious or compromised OpenAI-compatible model endpoint can repeatedly return malformed tool-call arguments, causing the server to issue continuous recursive chat-completion requests and accumulate oversized messages. During reproduction, concurrent agent chat requests timed out and the chat interface became unavailable.
+When a workspace uses an OpenAI-compatible provider with native tool calling enabled, the agent chat path parses model-supplied tool_calls[].function.arguments. If the arguments cannot be parsed as JSON, AnythingLLM appends an error message containing the raw arguments to the message history and recursively calls the provider again.
+A malicious prompt, prompt-injected external content, or compromised OpenAI-compatible model endpoint can repeatedly trigger malformed tool-call arguments. Because this path has no effective retry limit, recursion depth limit, raw argument size limit, or accumulated message size limit, the server can be forced into continuous recursive chat-completion requests while the message history grows with attacker-influenced content. During reproduction, concurrent agent chat requests timed out and the chat interface became unavailable.
 
 ## code analysis
 
