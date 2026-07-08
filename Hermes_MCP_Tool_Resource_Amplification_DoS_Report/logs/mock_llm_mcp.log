@@ -1,0 +1,9 @@
+mock_llm_mcp listening on http://127.0.0.1:18083/v1 result_mb=12
+[19:02:10] issuing_tool_call name=tool_search body_bytes=49430 schema_bytes=43161 tools=18
+[19:02:10] issuing_tool_call name=tool_search body_bytes=49430 schema_bytes=43161 tools=18
+[19:02:11] issuing_tool_call name=tool_call target=mcp_amplify_read_resource body_bytes=54029 schema_bytes=43161 tools=18
+[19:02:11] issuing_tool_call name=tool_call target=mcp_amplify_read_resource body_bytes=54029 schema_bytes=43161 tools=18
+[19:02:12] issuing_tool_call name=tool_call target=mcp_amplify_read_resource body_bytes=56315 schema_bytes=43161 tools=18
+[19:02:13] issuing_tool_call name=tool_call target=mcp_amplify_read_resource body_bytes=56315 schema_bytes=43161 tools=18
+[19:02:14] issuing_tool_call name=tool_call target=mcp_amplify_read_resource body_bytes=58601 schema_bytes=43161 tools=18
+[19:02:14] issuing_tool_call name=tool_call target=mcp_amplify_read_resource body_bytes=58601 schema_bytes=43161 tools=18

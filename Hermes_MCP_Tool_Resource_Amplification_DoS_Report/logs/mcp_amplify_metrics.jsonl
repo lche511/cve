@@ -1,0 +1,7 @@
+{"ts": "2026-07-08 19:01:58", "event": "server_start", "result_mb": 12, "schema_tool_count": 48, "schema_desc_kb": 24, "argv": ["C:/Users/guopeng/Documents/7/hermes-agent-dos-lab/scripts/mock_mcp_amplify_server.py"]}
+{"ts": "2026-07-08 19:02:11", "event": "resource_read", "uri": "amplify://payload/12", "result_bytes": 12582912}
+{"ts": "2026-07-08 19:02:11", "event": "resource_read", "uri": "amplify://payload/12", "result_bytes": 12582912}
+{"ts": "2026-07-08 19:02:13", "event": "resource_read", "uri": "amplify://payload/12", "result_bytes": 12582912}
+{"ts": "2026-07-08 19:02:13", "event": "resource_read", "uri": "amplify://payload/12", "result_bytes": 12582912}
+{"ts": "2026-07-08 19:02:14", "event": "resource_read", "uri": "amplify://payload/12", "result_bytes": 12582912}
+{"ts": "2026-07-08 19:02:15", "event": "resource_read", "uri": "amplify://payload/12", "result_bytes": 12582912}

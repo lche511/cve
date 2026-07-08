@@ -1,0 +1,7 @@
+=== MCP discovery/schema amplification ===
+[2026-07-08 18:36:55] baseline_start schema_tools=4 schema_desc_kb=1
+[2026-07-08 18:36:57] baseline registered=7 schema_bytes=6478 discovery_ms=784
+[2026-07-08 18:36:57] attack_start schema_tools=160 schema_desc_kb=64
+[2026-07-08 18:37:00] attack registered=163 schema_bytes=10548310 discovery_ms=2019 schema_amplification=1628.33x
+[2026-07-08 18:37:00] missing_bound no_tool_count_limit no_schema_byte_limit accepted_description_bytes=10485760
+[2026-07-08 18:37:00] RESULT=REPRODUCED_DISCOVERY_SCHEMA_AMPLIFICATION
