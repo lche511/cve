@@ -1,0 +1,17 @@
+[2026-07-09 06:51:16] REAL_BROWSER_USE_VERSION=0.13.3
+[2026-07-09 06:51:16] REAL_BROWSER_USE_MCP_SERVER_FILE=/usr/local/lib/python3.12/site-packages/browser_use/mcp/server.py
+[2026-07-09 06:51:16] REAL_MCP_SERVER_COMMAND=python -m browser_use.mcp
+[2026-07-09 06:51:16] AGENT_TASK_SAMPLE_PROMPT_IN_SCRIPT=True max_steps=40
+[2026-07-09 06:51:17] BASELINE_MCP_PROBE=list_tools result=AVAILABLE tool_count=16
+[2026-07-09 06:51:17] MCP_HAS_RETRY_TOOL=True
+[2026-07-09 06:51:17] REAL_MCP_REQUEST=call_tool retry_with_browser_use_agent max_steps=40 sdk_read_timeout=3s
+[2026-07-09 06:51:20] REAL_MCP_CLIENT_EXCEPTION=McpError elapsed_seconds=3.00
+[2026-07-09 06:51:20] REAL_MCP_CLIENT_ERROR='Timed out while waiting for response to ClientRequest. Waited 3.0 seconds.'
+[2026-07-09 06:51:25] SERVER_WORK_AFTER_CLIENT_TIMEOUT=True local_openai_requests_before=2 after=7
+[2026-07-09 06:51:25] AFFECTED_WORKFLOW_UNAVAILABLE=True
+[2026-07-09 06:51:25] RESULT=REPRODUCED_AFFECTED_WORKFLOW_UNAVAILABLE
+
+
+馃洃 SIGTERM received. Exiting immediately...
+
+
